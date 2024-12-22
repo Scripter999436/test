@@ -8,7 +8,7 @@ game:GetService("Players").LocalPlayer.Character:FindFirstChild("Rod Of The Dept
 while true do wait ()
 local args = {
     [1] = 100,
-    [2] = false
+    [2] = ture
 }
 
 game:GetService("ReplicatedStorage").events.reelfinished:FireServer(unpack(args))
