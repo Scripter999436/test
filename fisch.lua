@@ -16,7 +16,7 @@ local args = {
     [1] = 21.399999999999995,
     [2] = 1
 }
-while true do wait (10)
+while true do wait (5)
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("Rod Of The Depths").events.cast:FireServer(unpack(args))
         end
     end
