@@ -3,7 +3,7 @@ local Window = Library.CreateLib("benshi hub", "DarkTheme")
 local Tab = Window:NewTab("TabName")
 local Section = Tab:NewSection("Section Name")
 Section:NewButton("simple spy", "simple", function()
-    
+    loadstring(game:HttpGet("https://web.archive.org/web/20240323091819/https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
 end)
 Section:NewToggle("ToggleText", "ToggleInfo", function(state)
     if state then
