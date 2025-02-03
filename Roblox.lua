@@ -68,4 +68,49 @@ end
 end,
 
 })
+local Toggle = Tab:CreateToggle({
+   Name = "เก็บไอเทม",
+   CurrentValue = false,
+   Flag = "Toggle1",
+      Callback = function(sss)
+         _G.mm = sss
+         if _G. mm then
+            while _G.mm do
+               wait()
+for i, v in pairs(game.workspace.BoostDrop.Drops:GetChildren()) do
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
+end
+end,
+
+
+
+
+
+
+               
+
+})
+      local Toggle = Tab:CreateToggle({
+   Name = "rollธรรมดา",
+   CurrentValue = false,
+   Flag = "Toggle1", 
+   Callback = function(Any)
+               _G.op = Any
+               if _G.op then
+                  while _G.op do
+                     wait()
+                     game:GetService("ReplicatedStorage").Remote.Function.Roll:FindFirstChild("[C-S]Roll"):InvokeServer()
+                  end
+               end
+               
+  
+   end,
+})
+
+      
+
+                     
+                                            
 
